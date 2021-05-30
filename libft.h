@@ -6,7 +6,7 @@
 /*   By: dde-oliv <dde-oliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 22:55:03 by dde-oliv          #+#    #+#             */
-/*   Updated: 2021/05/29 21:03:46 by dde-oliv         ###   ########.fr       */
+/*   Updated: 2021/05/29 22:23:47 by dde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 # define LIBFT_H
 # include <stddef.h>
 # include <unistd.h>
-# include <string.h>
 # include <stdlib.h>
-# include <stdio.h>
-# include <bsd/string.h>
 
 typedef struct s_list
 {
