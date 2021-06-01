@@ -6,7 +6,7 @@
 /*   By: dde-oliv <dde-oliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 00:30:16 by dde-oliv          #+#    #+#             */
-/*   Updated: 2021/05/29 21:00:59 by dde-oliv         ###   ########.fr       */
+/*   Updated: 2021/05/31 23:47:44 by dde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,10 @@ static void 	ft_build_words(int j, char **split, char *scpy, char c)
 			split[i] = ft_strdup(scpy);
 		i++;
 	}
+	if (*scpy == '\0' && j == 0)
+		split[j] = NULL;
+	else
+		split[j + 1] = NULL;
 }
 
 char	**ft_split(char const *s, char c)
@@ -40,9 +44,9 @@ char	**ft_split(char const *s, char c)
 	char	*scpy2;
 	char	**split;
 
-	if (!s || !c)
+	if (!s)
 		return (NULL);
-	scpy = ft_strctrim(s, c);
+	scpy = ft_strtrim(s, &c);
 	scpy2 = scpy;
 	i = 0;
 	j = 0;
