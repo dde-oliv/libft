@@ -6,7 +6,7 @@
 /*   By: dde-oliv <dde-oliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 00:30:16 by dde-oliv          #+#    #+#             */
-/*   Updated: 2021/06/01 00:11:55 by dde-oliv         ###   ########.fr       */
+/*   Updated: 2021/06/02 00:54:33 by dde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	scpy = ft_strtrim(s, &c);
+	if (!scpy)
+		return (NULL);
 	scpy2 = scpy;
 	i = 0;
 	j = 0;
@@ -57,7 +59,8 @@ char	**ft_split(char const *s, char c)
 		i++;
 	}
 	split = malloc(sizeof(char *) * (j + 2));
-	ft_build_words(j, split, scpy, c);
+	if (split)
+		ft_build_words(j, split, scpy, c);
 	free(scpy2);
 	return (split);
 }
