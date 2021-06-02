@@ -6,7 +6,7 @@
 /*   By: dde-oliv <dde-oliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 22:55:03 by dde-oliv          #+#    #+#             */
-/*   Updated: 2021/05/29 22:23:47 by dde-oliv         ###   ########.fr       */
+/*   Updated: 2021/06/01 21:01:03 by dde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stddef.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <limits.h>
 
 typedef struct s_list
 {
@@ -113,4 +114,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 
 int		ft_lstsize(t_list *lst);
+
+int		ft_isspace(char c);
 #endif
