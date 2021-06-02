@@ -6,7 +6,7 @@
 /*   By: dde-oliv <dde-oliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 22:55:03 by dde-oliv          #+#    #+#             */
-/*   Updated: 2021/06/01 21:01:03 by dde-oliv         ###   ########.fr       */
+/*   Updated: 2021/06/02 17:45:01 by dde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,11 @@ void	*ft_memchr(const void *str, int c, size_t n);
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
-size_t	ft_strlen(char *str);
+size_t	ft_strlen(char const *str);
 
 size_t	ft_strlcpy(char *dest, char const *src, size_t size);
 
-size_t	ft_strlcat(char *dest, char *src, size_t size);
+size_t	ft_strlcat(char *dest, char const *src, size_t size);
 
 char	*ft_strchr(const char *str, int c);
 
