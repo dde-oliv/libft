@@ -6,13 +6,13 @@
 /*   By: dde-oliv <dde-oliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/15 15:20:03 by dde-oliv          #+#    #+#             */
-/*   Updated: 2021/05/15 20:06:09 by dde-oliv         ###   ########.fr       */
+/*   Updated: 2021/06/02 17:37:59 by dde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	size;
 
