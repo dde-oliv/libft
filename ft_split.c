@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-oliv <dde-oliv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: doliveira <doliveira@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 00:30:16 by dde-oliv          #+#    #+#             */
-/*   Updated: 2021/06/02 00:54:33 by dde-oliv         ###   ########.fr       */
+/*   Updated: 2021/06/11 09:12:41 by doliveira        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	while (scpy[i] != '\0' && ft_strchr(scpy + i, c) != NULL)
 	{
-		if (i > 1 && scpy[i - 1] != c && scpy[i] == c)
+		if (i > 0 && scpy[i - 1] != c && scpy[i] == c)
 			j++;
 		i++;
 	}
